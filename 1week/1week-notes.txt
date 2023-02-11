@@ -1,0 +1,11 @@
+Personal Websites on Terpconnect:
+https://terpconnect.umd.edu/webhost.html
+
+• Accessing your Terpconnect files:
+https://dav.terpconnect.umd.edu/
+
+Example:
+https://terpconnect.umd.edu/~jvaldiv8/
+
+Validate webserver:
+validator.w3.org

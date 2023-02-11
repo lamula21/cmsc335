@@ -1,0 +1,10 @@
+/* Do not remove this rule */
+
+html {
+    font-size: 14px;
+}
+
+
+table,th, td, tr {
+    border: 1px solid black;
+}
