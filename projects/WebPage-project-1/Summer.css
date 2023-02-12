@@ -4,7 +4,79 @@ html {
     font-size: 14px;
 }
 
+body{
+    border: 0.7rem solid brown;
+    border-style: double;
+    background-color: antiquewhite;
 
-table,th, td, tr {
-    border: 1px solid black;
+    /* Center website */
+    display:flex;
+    justify-content:center;
+    
 }
+table,th, td, tr {
+    border: 0.1rem solid black;
+}
+
+.red{
+    color: brown;
+}
+
+.word:first-letter{
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.word:hover{
+    color: red;
+    transition: 0.5s;
+}
+
+/* For the images */
+.responsive {
+    border: 0.1rem solid black;
+    max-width: 100%;
+    height: auto;
+}
+
+.table-header{
+    background-color: antiquewhite;
+}
+
+
+#main {
+    border: 1rem solid blue;
+    border-style: groove;
+
+    /* space outside the box */
+    margin: 1em 1em 1em 1em;
+
+    /* space inside the box */
+    padding: 4em 7em 2em 3em;
+    
+    background-color: white;
+
+    /* Blue block responsive*/
+    min-width: 10rem;
+    max-width: 50rem;
+
+
+}
+
+/* images box */
+#header{
+    display: flex;
+
+    align-items: center;
+
+    flex-direction: row;
+}
+
+/* box same height as table */
+#weekly-schedule{
+    height: auto;
+    width: 18rem;
+
+    text-align: center;
+}
+
