@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 2rem;
+
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+
+  background-image: url('assets/img2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  border-collapse: collapse; 
+  background-color: #f6f6f6;
+}
+
+th, td {
+  padding: 1rem;
+}
+
+th {
+  background: #ffc107;
+  color: white;
+  padding: 0.7rem;
+}
+
+td {
+  border: 0.1rem solid white;
+  box-sizing: border-box;
+}
+
+tfoot > tr  {
+  background: black;
+  color: white;
+}
+
+tbody > tr:hover {
+  background-color: #04aa6d79;
+}
+
+.grader-container{
+  font-size: 12px;
+  display:inline-block;
+
+  color:#232323;
+  
+  border:0.1rem solid #21222119;
+  border-radius: 0.3rem;
+
+  background:#CCC;
+  
+  box-shadow: 0 0 0.2rem -0.1rem rgba(0,0,0,0.2);
+  
+  cursor:pointer;
+
+  max-width: 20rem;
+  margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+  padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+  
+  text-align: center;
+}
+
+#link {
+  text-decoration: none;
+  color: #232323;
+}
+
+
+.grader-container:active {
+  color:#131a9fb1;
+  box-shadow: 0 0 0.5rem -0.1rem rgba(0,0,0,0.6);
+  background:#04AA6D;
+}
+
+.ta-container{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.3rem;
+}
+
+.ta-td-box{
+  text-align: center;
+}
