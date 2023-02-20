@@ -1,0 +1,36 @@
+<!-- You implement -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Terp Store</title>
+</head>
+<body>
+
+    <div id="main">
+        <div class="h1-box u">
+            <h1 ><u class="h1-box u">Terp Store</u></h1>
+        </div>
+    
+        <div id="center-box">
+            <!-- link to catalogInquiry.shtml -->
+            <a href="catalogInquiry.shtml" class="link-css">Catalog Inquiry</a>
+            <br>
+            <!-- link to placingOrder.shtml -->
+            <a href="placingOrder.shtml" class="link-css">Placing Order</a>
+        </div>
+    
+    
+        <div id="celeste-block">
+            <div id="footer" class="link-css">
+                <!--#include file="footer.html" -->
+               </div>
+        </div>
+
+    </div>
+</body>
+</html>

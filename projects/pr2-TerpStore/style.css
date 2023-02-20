@@ -1,0 +1,72 @@
+/* You implement */
+body {
+    background-color: white;
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+#main{
+    border: 0.7rem solid green;
+    background-image: url(images/JimHenson.jpg);
+    background-attachment:scroll;
+    background-size: cover;
+
+    width: 100vh;
+    height: 100vh;
+
+    /* position in relative so child container can be modified */
+    position: relative;
+
+}
+
+.h1-box{
+    margin: 0rem 0rem 0rem 0.5rem;
+}
+
+.h1-box u{    
+    background-color: rgba(0, 0, 0, 0.274);
+    font-size: 70px;
+    color: white;
+
+}
+
+#center-box {
+    border: 0.15rem solid black;
+    background-color: rgba(255, 255, 255, 0.468);
+
+    display: block;
+    text-align: center;
+
+    width: 20rem;
+    height: 4rem;
+
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+
+.link-css{
+    color: white;
+    font-size: 20pt;
+} 
+
+#celest-block {
+    background-color: cadetblue;
+}
+
+#footer {
+    /* box css */
+    border: 0.7rem solid grey;
+    border-style: outset;
+    background-color: red;
+    
+    /* space outside the box */
+    margin: 1rem 1rem 1rem 1rem;
+
+    /* text css */
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
