@@ -25,11 +25,16 @@
         </div>
     
     
-        <div id="celeste-block">
+        <div class="footer-wrap">
             <div id="footer" class="link-css">
-                <!--#include file="footer.html" -->
-               </div>
+               
+                <!--#include virtual="footer.shtml" -->
+            </div>
         </div>
+
+ 
+
+
 
     </div>
 </body>

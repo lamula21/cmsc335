@@ -1,3 +1,67 @@
 <!-- You implement -->
+<!-- You implement -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catalog Inquiry</title>
+</head>
+<body>
+
+    <div id="main">
+        <div class="h1-box u">
+            <h1 ><u class="h1-box u">Placing Order</u></h1>
+        </div>
+    
+        <div class="form-box">
+            <form action="get">
+                <label for="item-category">Item Category</label>
+                <select name="plan" id="item-category">
+                    <option value="none" selected disabled hidden></option>
+                    <option value="free">clothes</option>
+                    <option value="starter">books </option>
+                    <option value="professional">music</option>
+                    <option value="corporate">food</option>
+                    <option value="corporate">other</option>
+                </select>
+                
+                <br>
+                
+                <label for="max-cost">Maximum Cost($)</label>
+                <input type="text" name="Maximum Cost($)" id="max-cost">
+                
+                <br>
+                
+                <input type="checkbox" name="Available on Campus" id="oncampus">
+                <label for="oncampus">On campus</label>
+
+                <br>
+
+                <input type="checkbox" name="Available Online" id="online">
+                <label for="online">Online</label>
+            </form>
+            
+
+
+        </div>
+    
+    
+        <div class="footer-wrap">
+            <div id="footer" class="link-css">
+               
+                <!--#include virtual="footer.shtml" -->
+            </div>
+        </div>
+
+ 
+
+
+
+    </div>
+</body>
+</html>
 <!-- form for users to ask for items' information -->

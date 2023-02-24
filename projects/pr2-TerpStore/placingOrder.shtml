@@ -1,3 +1,36 @@
 <!-- You implement -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catalog Inquiry</title>
+</head>
+<body>
 
-<!-- form that allow users to submit an item's order -->
+    <div id="main">
+        <div class="h1-box u">
+            <h1 ><u class="h1-box u">Placing Order</u></h1>
+        </div>
+    
+        <div id="center-box">
+            
+        </div>
+    
+    
+        <div class="footer-wrap">
+            <div id="footer" class="link-css">
+               
+                <!--#include virtual="footer.shtml" -->
+            </div>
+        </div>
+
+ 
+
+
+
+    </div>
+</body>
+</html>

@@ -8,6 +8,9 @@ body {
 }
 
 #main{
+    /* position in relative so child container can be modified */
+    position: relative;
+
     border: 0.7rem solid green;
     background-image: url(images/JimHenson.jpg);
     background-attachment:scroll;
@@ -15,10 +18,6 @@ body {
 
     width: 100vh;
     height: 100vh;
-
-    /* position in relative so child container can be modified */
-    position: relative;
-
 }
 
 .h1-box{
@@ -26,15 +25,15 @@ body {
 }
 
 .h1-box u{    
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: rgba(0, 0, 0, 0.4);
     font-size: 70px;
-    color: white;
+    color: azure;
 
 }
 
 #center-box {
     border: 0.15rem solid black;
-    background-color: rgba(255, 255, 255, 0.468);
+    background-color: rgb(211,211,211, 0.8);
 
     display: block;
     text-align: center;
@@ -44,7 +43,7 @@ body {
 
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: 25%;
 }
 
 .link-css{
@@ -52,21 +51,40 @@ body {
     font-size: 20pt;
 } 
 
-#celest-block {
-    background-color: cadetblue;
+.link-css:hover {
+
+}
+
+.footer-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+    border: 0.5rem solid rgb(144, 211, 211);
+    position:absolute;
+    bottom:0;
+    width:98%;
+
+    display: flex;
+    justify-content: center;
+
+    padding-top: 10px;
 }
 
 #footer {
     /* box css */
-    border: 0.7rem solid grey;
-    border-style: outset;
+    position: absolute;
+    border: 0.4rem solid rgb(177, 172, 172);
+    border-style:ridge;
     background-color: red;
-    
-    /* space outside the box */
-    margin: 1rem 1rem 1rem 1rem;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+
 
     /* text css */
     color: white;
     text-decoration: underline;
     text-align: center;
+}
+
+.form-box {
+    color: white;
 }
