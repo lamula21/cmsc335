@@ -13,54 +13,62 @@
 <body>
 
     <div id="main">
+
+        <!-- HEADER -->
         <div class="h1-box u">
-            <h1 ><u class="h1-box u">Placing Order</u></h1>
+            <h1 ><u class="h1-box u">Catalog Inquiry</u></h1>
         </div>
     
+
+        <!-- MIDDLE BOX -->
         <div class="form-box">
-            <form action="get">
-                <label for="item-category">Item Category</label>
-                <select name="plan" id="item-category">
-                    <option value="none" selected disabled hidden></option>
-                    <option value="free">clothes</option>
-                    <option value="starter">books </option>
-                    <option value="professional">music</option>
-                    <option value="corporate">food</option>
-                    <option value="corporate">other</option>
-                </select>
-                
-                <br>
-                
-                <label for="max-cost">Maximum Cost($)</label>
-                <input type="text" name="Maximum Cost($)" id="max-cost">
-                
-                <br>
-                
-                <input type="checkbox" name="Available on Campus" id="oncampus">
-                <label for="oncampus">On campus</label>
+            <form action="http://npp.cs.umd.edu/cmsc335/projects/TerpStore/catalogInquiry.php" method="get">
 
-                <br>
+                <!-- ITEM CATEGORY -->
+                <label for="item-choice"><u>Item Category</u> </label>
+                <input list="element-options" name="item-choice" class="text-box" id="item-choice" required>
+                <datalist id="element-options">
+                    <option value="clothes"></option>
+                    <option value="books"></option>
+                    <option value="music"></option>
+                    <option value="food"></option>
+                    <option value="other"></option>
+                </datalist>  <br> <br>
+               
 
-                <input type="checkbox" name="Available Online" id="online">
-                <label for="online">Online</label>
+                <!-- MAXIMUM COST -->
+                <label for="number-box"> <u>Maximum Cost($)</u> </label>
+                <input type="number" name="maximumCost" class="text-box" id="number-box" min="1" max="1000" step="5" value="1"> <br> <br>
+                
+
+                <!-- CHECKBOX -->
+                <label for="oncampus-check"> <input type="checkbox" id="oncampus-check" name="availableOnCampus"> <u>Available on Campus</u> </label> <br>
+        
+                <label for="online-check"> <input type="checkbox" id="online-check"  name="availableOnline" checked> <u>Available Online</u> </label> <br><br>
+                
+
+                <!-- ADDITIONAL INFO -->
+                <u>Additional Information</u> <br>
+                <textarea name="info" id="info-area" cols="40" rows="10"></textarea> <br>
+
+                <!-- CONTACT -->
+                <label for="email"> 
+                    <u>Contact Email Address:</u> <input type="text" name="email" class="text-box" id="email" placeholder="example@terpmail.umd.edu" pattern="\w+@\w+\.umd\.edu">
+                </label> <br><br>
+
+                <!-- BUTTONS -->
+                <input type="submit" id ="submit" class="btn submit" value="Submit Inquiry">
+                <input type="reset"  class="btn reset" value="Clear">
             </form>
-            
-
-
         </div>
     
     
+        <!-- FOOTER -->
         <div class="footer-wrap">
-            <div id="footer" class="link-css">
-               
+            <div class="footer">
                 <!--#include virtual="footer.shtml" -->
             </div>
         </div>
-
- 
-
-
-
     </div>
 </body>
 </html>

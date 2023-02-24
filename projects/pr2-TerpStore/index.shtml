@@ -26,8 +26,7 @@
     
     
         <div class="footer-wrap">
-            <div id="footer" class="link-css">
-               
+            <div class="footer">
                 <!--#include virtual="footer.shtml" -->
             </div>
         </div>

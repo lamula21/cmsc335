@@ -1,4 +1,6 @@
 /* You implement */
+
+/* BODY CSS */
 body {
     background-color: white;
     
@@ -7,6 +9,7 @@ body {
 
 }
 
+/* MAIN CSS */
 #main{
     /* position in relative so child container can be modified */
     position: relative;
@@ -20,47 +23,50 @@ body {
     height: 100vh;
 }
 
+/* HEADERS CSS */
 .h1-box{
     margin: 0rem 0rem 0rem 0.5rem;
+    
 }
 
 .h1-box u{    
     background-color: rgba(0, 0, 0, 0.4);
     font-size: 70px;
     color: azure;
+    text-shadow: rgb(126, 45, 45) 0.125em 0em 0.125em;
 
 }
 
+/* CENTER BOX CSS */
 #center-box {
-    border: 0.15rem solid black;
+    border: 1.7px solid black;
     background-color: rgb(211,211,211, 0.8);
+    border-radius: 4px;
 
     display: block;
     text-align: center;
 
-    width: 20rem;
-    height: 4rem;
+    width: 15rem;
+    height: 3rem;
 
     position: absolute;
     top: 50%;
-    left: 25%;
+    left: 30%;
 }
 
+/* LINKS FROM CENTER BOX CSS */
 .link-css{
     color: white;
-    font-size: 20pt;
+    font-size: 15pt;
 } 
 
-.link-css:hover {
-
-}
-
+/* FOOTER CSS */
 .footer-wrap {
     padding-bottom: 2.5rem;    /* Footer height */
     border: 0.5rem solid rgb(144, 211, 211);
     position:absolute;
     bottom:0;
-    width:98%;
+    width:97.5%;
 
     display: flex;
     justify-content: center;
@@ -68,7 +74,7 @@ body {
     padding-top: 10px;
 }
 
-#footer {
+.footer {
     /* box css */
     position: absolute;
     border: 0.4rem solid rgb(177, 172, 172);
@@ -76,15 +82,108 @@ body {
     background-color: red;
     bottom: 0;
     width: 100%;
-    height: 2.5rem; 
+    height: 2.5rem;
 
-
+    
     /* text css */
-    color: white;
-    text-decoration: underline;
+    font-size: 17pt;
     text-align: center;
+
 }
 
+.footer a:link {
+    color: brown
+}
+
+.footer a:hover {
+    font-size: 10pt;
+}
+
+.footer a:visited{
+    color: beige;
+}
+
+
+/* FORM CSS */
 .form-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 0.3rem solid azure;
+    border-radius: 5px;
+    padding: 10px 0 0 10px;
+
+    display: block;
+
+    width: 80%;
+    height: 63%;
+
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.form-order {
+    width: 80%;
+    height: 34%;
+}
+
+
+.credit{
+    width: 30px;
+}
+
+#email{
+    width: 200px;
+}
+
+/* TEXT BOX CSS */
+.text-box{
+    margin-left: 10px;
+    border: 0.15rem solid red;
+    border-radius: 2px;
+}
+
+.card {
+    width: 2rem;
+    margin: 0 10px 0 10px;
+}
+
+.text-box:hover {
+    border: 0.15rem solid rgb(22, 19, 19);
+    border-radius: 2px;
+}
+
+/* BUTTONS CSS */
+.btn {
+    margin: 0 5px 0 0;
+    width: 5rem;
+    height: 2rem;
+
+    border: 0.15rem solid grey;
+    border-style: double;
+    border-radius: 4px;
+}
+
+#submit{
+    width: 7rem;
+}
+
+.btn:active {
+    background-color: black;
     color: white;
+}
+
+.btn:hover {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1px rgb(0, 0, 0.2);
+}
+
+/* ADDITIONAL INFO TEXT AREA CSS */
+#info-area {
+    resize:both; 
+    
+    min-width: 50%;
+    width: 80%;
+    max-width: 95%;
+    
+    min-height: 80px;
+    height: 100px;
+    max-height: 148px;
 }

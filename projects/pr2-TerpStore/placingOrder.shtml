@@ -1,4 +1,5 @@
 <!-- You implement -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,31 +7,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Catalog Inquiry</title>
+    <title>Placing Order</title>
 </head>
 <body>
 
     <div id="main">
+
+        <!-- HEADER -->
         <div class="h1-box u">
             <h1 ><u class="h1-box u">Placing Order</u></h1>
         </div>
     
-        <div id="center-box">
-            
+
+        <!-- MIDDLE BOX -->
+        <div class="form-box form-order">
+            <form action="processing/placingOrder.php" method="post">
+
+                <!-- ITEM SERIAL -->
+                <label for="item-serial"><u>Item Serial #</u> </label>
+                <input type="text" name="serialNumber" id="item-serial" class="text-box" placeholder="umd-item-0000" pattern="umd-item-[0-9]{4}" required>
+                  <br> <br>
+               
+                <!-- CREDIT CARD -->
+                <label for="credit1"> <u>Credit Card #</u> </label>
+                <input type="text" name="cc1" class="text-box card" id="credit1" pattern="[0-9]{4}" required maxlength="4"> - 
+                <input type="text" name="cc2" class="text-box card" id="credit2" pattern="[0-9]{4}" required maxlength="4"> -
+                <input type="text" name="cc3" class="text-box card" id="credit3" pattern="[0-9]{4}" required maxlength="4"> - 
+                <input type="text" name="cc4" class="text-box card" id="credit4" pattern="[0-9]{4}" required maxlength="4">
+                <br> <br>
+
+                <!-- SHIPPING ADDRESS -->
+                <label for="shipping"><u>Shipping Address</u></label>
+                <input type="text" name="shipping" id="shipping" class="text-box" maxlength="80"> <br><br>
+
+                <!-- CONTACT -->
+                <label for="email"> 
+                    <u>Contact Email Address:</u> <input type="text" name="email" class="text-box" id="email" placeholder="example@terpmail.umd.edu" pattern="\w+@(.+).edu">
+                </label> <br><br>
+
+                <!-- BUTTONS -->
+                <input type="submit" class="btn submit" id="submit-btn">
+                <input type="reset"  class="btn reset"  id="reset-btn">
+            </form>
         </div>
     
     
+        <!-- FOOTER -->
         <div class="footer-wrap">
-            <div id="footer" class="link-css">
-               
+            <div class="footer">
                 <!--#include virtual="footer.shtml" -->
             </div>
         </div>
-
- 
-
-
-
     </div>
 </body>
 </html>
+
+<!-- When a user hovers over the footer link, the size of the link should decrease. -->
