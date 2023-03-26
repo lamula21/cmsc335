@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Child Selectors</title>
+
+    <style>
+        a:link {
+            color: orange;
+        }
+
+        a[title] {
+            color: green;
+        }
+
+        a[title="news"] {
+            color: red;
+        }
+    </style>
+
+<body>
+    <h1>Attribute Selector</h1>
+    <p>
+        <a href="http://www.cs.umd.edu"  title="CS Page">CS Page</a><br>
+        <a href="http://www.umd.edu">UMD Page</a><br>
+        <a href="http://www.umd.edu" title="news">News</a>
+    </p>
+</body>
+
+</html>

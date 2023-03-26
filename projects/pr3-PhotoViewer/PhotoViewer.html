@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- TITLE -->
+        <div class="title">
+            <h1>Photo Viewer</h1>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="image-container">
+            <img src="InitialImage.jpg" alt="initialImage">
+        </div>
+
+        <!-- START FORM -->
+        <form id="form" >
+
+            <!-- STATUS -->
+            <div class="status-container">
+                <fieldset>
+                    <legend>Status</legend>
+                    <div class="row">
+                        <label for="photo-name">Photo Being Displayed:</label>
+                        <input id="photo-name" value="InitialIMage.jpg" name="photoDisplayed" disabled>
+                    </div>
+
+                    <div class="row status">
+                        <span class="status-info">Photo Viewer System</span>
+                    </div>
+                </fieldset>
+
+            </div>
+
+            <!-- LOAD LOCAL -->
+            <div class="load-local-container">
+                <fieldset>
+                    <legend>Loading Images (Local Folder)</legend>
+                    <div class="row">
+                        <label for="photo-folder">Photo's Folder:</label>
+                        <input id="photo-folder" type="text" value="umcp/" name="photoFolder">
+
+                        <label for="common-name">Common Name:</label>
+                        <input id="common-name" type="text" value="college" name="commonName">
+                    </div>
+
+                    <div class="row">
+                        <label for="start-photo">Start Photo Number:</label>
+                        <input id="start-photo" type="text" value="2" name="startNumber">
+
+                        <label for="end-photo">End Photo Number:</label>
+                        <input id="end-photo" type="text" value="4" name="endNumber">
+                    </div>
+
+                    <div class="row">
+                        <input class="button" type="submit" value="Load Photos">
+                    </div>
+                </fieldset>
+            </div>
+
+            <!-- LOAD JSON -->
+            <div class="load-json-container">
+                <fieldset>
+                    <legend>Loading Images (JSON File)</legend>
+                    <div class="row">
+                        <label for="json">URL:</label>
+                        <input id="json" type="text" value="http://www.cs.umd.edu/~nelson/classes/resources/cmsc335/images/imagesSet1.json" name="jsonUrl">
+                        <input class="button" type="submit" value="Load JSON">
+                    </div>
+                </fieldset>
+
+            </div>
+
+            <!-- ITERATING -->
+            <div class="iterate-container">
+                <fieldset>
+                    <legend>Iterating</legend>
+                    <button class="button" id="prev">Previous Photo</button>
+                    <button class="button" id="next">Next Photo</button>
+                    <button class="button" id="first">First Photo</button>
+                    <button class="button" id="last">Last Photo</button>
+                </fieldset>
+
+            </div>
+
+            <!-- SLIDESHOWS-->
+            <div class="slideshows-container">
+                <fieldset>
+                    <legend>SlideShows</legend>
+                    <button class="button" id="slide">SlideShow</button>
+                    <button class="button" id="random">RandomSlideShow</button>
+                    <button class="button" id="stop">StopSlideShow</button>
+                </fieldset>
+            </div>
+
+            <!-- SEPARATOR -->
+            <hr>
+
+            <!-- RESET BUTTON -->
+            <div class="reset-form-container">
+                <input class="button" type="reset" value="Reset Form Values">
+            </div>
+        </form>
+        <!-- END FORM -->
+        
+    </div>
+</body>
+
+</html>

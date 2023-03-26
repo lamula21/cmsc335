@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Child Selectors</title>
+
+    <style>
+        body > p {
+            /* remove > to see the impact */
+            color: red;
+        }
+
+        div > p {
+            color: blue;
+        }
+
+        div div > strong {
+            color: green;
+        }
+    </style>
+
+<body>
+    <h1>Child Selectors</h1>
+    <p>
+        First paragraph
+    </p>
+
+    <div>
+        <p>
+            Paragraph in div
+        </p>
+        <div>
+            <strong>In second div</strong>
+        </div>
+        <div>
+            <p>
+                <strong>In third div</strong>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
