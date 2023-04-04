@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JS WeakMap</title>
+</head>
+
+<body>
+    <h2>Check Console, Memory, Head Snapshot</h2>
+    <script>
+        "use strict";
+
+        function TerpObject() {
+            this.data = new Array(300000);
+        }
+        new_obj = { "hello": "1" }
+        window.obj = new TerpObject();
+        //let map = new Map(); /* Using Map. Change to WeakMap to see memory effect */
+        let map = new WeakMap(); /* Using WeakMap */ 
+        map.set(window.obj, 1);
+        map.set(new_obj, 2)
+        delete window.obj;
+    </script>
+</body>
+
+</html>
