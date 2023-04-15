@@ -8,7 +8,7 @@
 
 <body>
     <script>
-         /***** object1 *****/
+        /***** object1 *****/
         document.writeln("<h2>Example #1 Properties of object1</h2>");
         let object1 = {};
         let propertiesArray = getAllProperties(Object.prototype);
@@ -19,13 +19,13 @@
         }
         document.writeln("<hr>");
 
-        
+
 
 
         document.writeln("<h2>Example #2 desert properties</h2>");
         let dessert = {
             minimumCalories: 100,
-            displayDessert: function() {
+            displayDessert: function () {
                 document.writeln(this.name + ", " + this.calories + "<br>");
             },
 
@@ -84,6 +84,23 @@
             return answer;
         }
 
+        const projects = [{ name: "Btree", language: "Java", lines: 200 },
+        { name: "LinkedList", language: "C", lines: 150 },
+        { name: "Viewer", language: "PHP", lines: 500 },
+        { name: "Chess", language: "Java", lines: 100 }
+    ];
+
+        //projects.forEach( ({name, language}) => {document.writeln(`${name}, ${language}`)})
+        
+        // projects.filter( ({language, lines}) => lines < 200 ).forEach( ({language}) => document.writeln(`${language}<br>`));
+
+        // const hasAtLeastAJavaProjectWith100 = projects.some( ({language,lines}) => language == "Java" && lines==100);
+        // document.writeln(hasAtLeastAJavaProjectWith100);
+        
+        // const findProject = projects.find( ({name, language, lines}) => language==="PHP" && lines==500 ).name;
+        // document.writeln(findProject);
+
+        
     </script>
 </body>
 

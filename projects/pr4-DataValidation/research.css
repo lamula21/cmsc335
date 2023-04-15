@@ -1,0 +1,67 @@
+h1 {
+    text-decoration: underline;
+    text-shadow: silver .125rem .125rem .125rem;
+}
+
+fieldset {
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+legend {
+    color: #A0522D;
+}
+
+textarea {
+    height: 7rem;
+    width: 60%;
+}
+
+.id{
+    width: 35px;
+    height: 20px;
+}
+
+.phone-email{
+    margin-top: 20px;
+}
+
+.phoneFields{
+    width: 25px;
+}
+
+#email-field {
+    width: 40%;
+}
+
+.awhFields {
+    width: 50px;
+    height: 20px;
+}
+
+input:focus {
+    border-style: none;
+    outline: 2.5px solid rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+.m-word{
+    margin-left: 25px;
+}
+
+.m-word2{
+    position:relative;
+    margin-right: 10px;
+    top: 2.5px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1px;
+    border-top: 1px solid rgba(204, 204, 204, 0.551);
+    border-bottom: 2px solid black;
+}
