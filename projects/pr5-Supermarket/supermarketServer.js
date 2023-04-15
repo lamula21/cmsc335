@@ -5,9 +5,7 @@ const http = require('http')
 const app = express()
 
 
-function main() {
 
 
-    const PORT = 5000
-    app.listen(PORT, () => console.log(`Server working: http://localhost:${PORT}`));
-}
+const PORT = 5001
+app.listen(PORT, () => console.log(`Server working: http://localhost:${PORT}`));
