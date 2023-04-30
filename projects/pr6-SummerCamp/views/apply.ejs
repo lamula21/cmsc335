@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Application</title>
+</head>
+<body>
+  <h1>Application</h1>
+
+    <form action="/applyResult" method="POST">
+      <div id="div-form">
+
+        <div class="row">
+          <label for="username"><strong>Name: </strong></label>
+          <input type="text" name="username" id="username">
+          
+          <label for="email"><strong>Email Address: </strong></label>
+          <input type="text" name="email" id="email">
+        </div>
+
+        <div class="row">
+          <label for="gpa"><strong>GPA: </strong></label>
+          <input type="text" name="gpa" id="gpa">
+        </div>
+
+        <div class="row">
+          <label for="info"><strong>Background Information:</strong></label><br>
+          <textarea id="info" name="info" rows="6" cols="80"></textarea>
+        </div>
+
+      </div>
+
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit Application">
+    </form>
+
+
+  <hr>
+  <a href="/">HOME</a>
+</body>
+</html>

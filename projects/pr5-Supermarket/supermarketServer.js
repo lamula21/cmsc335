@@ -161,7 +161,9 @@ process.stdout.write(`${prompt} `)
 process.stdin.on('readable', async () => {
     dataInput = process.stdin.read()
     if (dataInput !== null) {
+        console.log(dataInput);
         let command = dataInput.trim()
+
         if (command === 'itemsList') {
             const jsonFile = new Json(listChoice);
             let myJSON = await jsonFile.getJSON();
